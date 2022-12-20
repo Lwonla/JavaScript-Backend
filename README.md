@@ -1,3 +1,7 @@
+
+
+API_SEARCH="https://api.themoviedb.org/3/search/movie?api_key=9fdbd9cc154388c397db948ef90193e1&query"
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
