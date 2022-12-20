@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 //Dela upp adress, Bas-URL, kategori, api-nyckel.
 const API_URL =
   "https://api.themoviedb.org/3/movie/popular?api_key=9fdbd9cc154388c397db948ef90193e1";
+
 function App() {
   const [movies, setMovies] = useState([]);
   useEffect(() => {
@@ -18,7 +19,7 @@ function App() {
 
   return (
     <section>
-      <div className="cardContainer">
+      <div className="Container">
       TheWannabeMovieDb App
 
       <div className="cardContainer">
@@ -26,7 +27,7 @@ function App() {
           <MovieCard key={movieReq.id} {...movieReq} />
         ))}
       </div>
-      
+
       </div>
     </section>
   );
