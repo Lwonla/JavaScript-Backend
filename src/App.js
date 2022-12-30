@@ -18,6 +18,21 @@ function App() {
   }, []);
 
   return (
+    <div className="container">
+      TheHopeToBeMovieDb App
+      <div className="slider">
+        <div className="grid">
+          {movies.map((movieReq) => (
+            <MovieCard key={movieReq.id} {...movieReq} />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+export default App;
+
+/*
     <section>
       <div className="Container">
       TheWannabeMovieDb App
@@ -30,6 +45,4 @@ function App() {
 
       </div>
     </section>
-  );
-}
-export default App;
+*/

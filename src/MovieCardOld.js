@@ -11,32 +11,26 @@ const MovieCard = ({
   overview,
 }) => {
   return (
-    <div>
-      <div className="card">
-        <div className="image-wrapper">
-          <img src={movieImgBaseUrl + poster_path} alt="Poster img" />
-        </div>
-        <div className="card-body">
-          <div className="card-title-wrapper">
-            <h5 className="card-title">{original_title}</h5>
-          </div>
-          <div className="card-text">
-            Popularity rating <p>{vote_average}</p>
-            {overview}
-            </div>
-          <a href="index.html" className="btn btn-primary">
-            Go somewhere
-          </a>
-        </div>
+    <section>
+    <div className="slider-container">
+      <div className="slider">
+        <img src={movieImgBaseUrl + poster_path} alt="Poster img" />
+        
       </div>
     </div>
+    </section>
   );
 };
 export default MovieCard;
 
 /*  
 
+<h5>{original_title}</h5>
+        <p>
+          Popularity rating {vote_average} {overview}
+        </p>
 
+        
  <button
           className="carousel-control-prev"
           type="button"
